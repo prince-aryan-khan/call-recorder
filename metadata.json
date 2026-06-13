@@ -1,0 +1,6 @@
+{
+  "name": "Call Recorder",
+  "description": "Secure, background utility for Modern Android capturing calls, saving to public MediaStore, and featuring an Idle Guard foreground monitor and diagnostic dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
