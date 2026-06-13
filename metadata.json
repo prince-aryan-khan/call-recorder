@@ -1,0 +1,6 @@
+{
+  "name": "Call Recorder",
+  "description": "An automatic call-triggered audio recorder with platform fallbacks and local recording history.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
