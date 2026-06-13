@@ -29,7 +29,7 @@ class CallRecorderViewModel(application: Application) : AndroidViewModel(applica
     private val prefManager = PrefManager(application)
 
     // Exposed DB state
-    val callRecordsState: StateFlow<List<CallRecordEntity>> = repository.allItems
+    val callRecordsState: StateFlow<List<CallRecordEntity>> = repository.allRecords
         .flowOn(Dispatchers.IO)
         .stateIn(
             scope = viewModelScope,

@@ -385,7 +385,7 @@ fun RecordingDashboard(
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f),
                     textAlign = TextAlign.Center,
-                    modifier = Modifier.padding(bottom = 16.dp, horizontal = 12.dp)
+                    modifier = Modifier.padding(start = 12.dp, end = 12.dp, bottom = 16.dp)
                 )
 
                 Button(
@@ -619,7 +619,7 @@ fun EmptyState() {
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.5f),
             textAlign = TextAlign.Center,
-            modifier = Modifier.padding(horizontal = 24.dp, top = 4.dp)
+            modifier = Modifier.padding(start = 24.dp, end = 24.dp, top = 4.dp)
         )
     }
 }
