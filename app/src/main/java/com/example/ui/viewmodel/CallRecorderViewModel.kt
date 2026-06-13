@@ -229,7 +229,6 @@ class CallRecorderViewModel(application: Application) : AndroidViewModel(applica
                     val pm = context.getSystemService(Context.POWER_SERVICE) as PowerManager
                     action = Settings.ACTION_APPLICATION_DETAILS_SETTINGS
                     data = Uri.parse("package:$packageName")
-                    }
                 } else {
                     action = Settings.ACTION_SETTINGS
                 }
