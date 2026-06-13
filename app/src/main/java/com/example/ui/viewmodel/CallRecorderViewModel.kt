@@ -227,16 +227,14 @@ class CallRecorderViewModel(application: Application) : AndroidViewModel(applica
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                     val packageName = context.packageName
                     val pm = context.getSystemService(Context.POWER_SERVICE) as PowerManager
-                    if (pm.isIgnoringBatteryOptimizations(packageName)) {
-                        action = Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS
-                    } else {
-                        action = Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
-                        data = Uri.parse("package:$packageName")
+                    action = Settings.ACTION_APPLICATION_DETAILS_SETTINGS
+                    data = Uri.parse("package:$packageName")
                     }
                 } else {
                     action = Settings.ACTION_SETTINGS
                 }
             }
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             context.startActivity(intent)
         } catch (e: Exception) {
             try {
